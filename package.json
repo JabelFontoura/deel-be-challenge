@@ -11,7 +11,8 @@
     "sqlite3": "^4.0.1"
   },
   "scripts": {
-    "start": "SET NODE_ENV=DEV&&nodemon ./src/server.js",
+    "start": "nodemon ./src/server.js", 
+    "dev": "SET NODE_ENV=DEV&&nodemon ./src/server.js", 
     "seed": "node ./scripts/seedDb.js",
     "test": "SET NODE_ENV=TEST&&jest --watchAll --no-cache"
   },
