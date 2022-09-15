@@ -35,13 +35,7 @@ router.get('/admin/best-profession', getProfile, async (req, res) => {
     ],
   });
 
-  res.json(
-    !job
-      ? null
-      : {
-          profession: job.Contract.Contractor.profession,
-        }
-  );
+  res.json(!job? null : { profession: job.Contract.Contractor.profession });
 });
 
 /**
